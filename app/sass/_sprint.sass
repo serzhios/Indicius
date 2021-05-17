@@ -9,13 +9,12 @@
    grid-template-rows: 1fr
 
 .left-header 
- 
-	
+
+
 
 .left-info 
-	display: grid
-	grid-template-columns: 490px
-	grid-template-rows: 68px 68px 2fr 25px
+
+  
 	padding-left: 160px 
 	padding-top: 217px
 	color: $text-color-b
@@ -23,16 +22,16 @@
 		// .left-info__text
 
 	&__text 
-		
+		grid: 2px
 		font-family: 'DM Sans', sans-serif
       
 		font-style: normal
 		font-size: 51px  
-      grid: 2px
+      
 		// .left-info__title
 
 	&__title 
-     
+
 		font-family: 'Archivo', sans-serif     
 		
 		font-style: normal   
@@ -46,17 +45,32 @@
 		font-size: 24px
 		color: $text-color-b
 		margin-top: 40px
+		padding-bottom: 89px
 .info
-	display: inline-flex
-	justify-content: flex-start
-	&-txt
-		align-items: center
+	display: grid
+	padding-right: 40px
+   
+	&-txt		
+		
+		&__icon
+		display: inline-flex
+      
+		align-content: center
 		justify-content: center
+		justify-content: flex-start
+		align-items: center
+         
+         
+		&__texts
+			padding-left: 40px
+         
+			font-style: normal
+			font-size: 18px
+			font-family: 'DM Sans' sans-serif
 
 
-     
 .right-header 
-
+   padding-top: 124px
 .right-icon 
 
 		// .right-icon__img1
